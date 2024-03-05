@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://ejemtxfsgmvs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jjs6t"]
+size = Vector2(1170, 189)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionFloor" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(575, 582.5)
+shape = SubResource("RectangleShape2D_jjs6t")
+
+[node name="Floor" type="Panel" parent="."]
+offset_left = -8.0
+offset_top = 487.0
+offset_right = 1159.0
+offset_bottom = 678.0
